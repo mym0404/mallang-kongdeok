@@ -25,6 +25,7 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },
+  "homepage": "https://mallang-kongdeok.vercel.app/",
   "eslintConfig": {
     "extends": [
       "react-app",
