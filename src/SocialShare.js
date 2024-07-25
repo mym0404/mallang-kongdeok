@@ -107,8 +107,8 @@ function SocialShare({setPopupOpen}) {
 		window.Kakao.Link.sendDefault({
 			objectType: 'feed',
 			content: {
-				title: '말랑술떡이 알려주는 술 MBTI',
-				description: '당신의 술을 확인하세요!🤔🍻🍸🥃🍷',
+				title: '말랑콩떡이 알려주는 싸이코패스 성향 테스트',
+				description: '당신의 싸이코패스 성향을 확인하세요!🤔🍻🍸🥃🍷',
 				imageUrl:
 					'https://github.com/zmin9/mallang-sulddeok/blob/main/public/home_image.jpg?raw=true',
 				link: {
@@ -159,7 +159,6 @@ function SocialShare({setPopupOpen}) {
 		</Popup>
 	);
 }
-  
+
 
 export default SocialShare;
-  

@@ -14,11 +14,11 @@ const Main = () => {
     }
 
     const linkTo = useNavigate();
-    const [loading, setLoading] = useState(true); 
+    const [loading, setLoading] = useState(true);
     const [index, setIndex] = useState(0);
     const [selected, setSelected] = useState(-1);
     const [answerList, setAnswerList] = useState([0,0,0,0]);
-    
+
     const onClickAnswer = (e) => {
         if(e.target.className === 'a1'){
             userAnswer = 0;
@@ -46,7 +46,7 @@ const Main = () => {
             setSelected(-1);
         }, 300); // 0.5초 뒤에 함수 실행
     }
-    
+
 
     useEffect(() => {
         /* for loading off */
@@ -69,11 +69,12 @@ const Main = () => {
 
     return (
         <div className="background">
-            { loading ? <Loading text="메뉴판을 읽고 자신에게 알맞은 메뉴를 선택하세요!"/> : null}
+            <div style={{width:'100%',height:'100%', position:'absolute', backdropFilter: 'blur(24px) brightness(0.4)'}}/>
+            { loading ? <Loading text="최대한 솔직하게 답변하세요"/> : null}
             <div className="main">
                 <p style={{fontSize:'30px', fontWeight:'bold'}}>
                     <br/>
-                    「Mallang Bar」
+                    「Psychopath Test 」
                 </p>
                 <div className="question">
                     {testScript.test[index].question}<br/><br/><br/><br/><br/><br/>

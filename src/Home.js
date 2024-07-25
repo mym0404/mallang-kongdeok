@@ -19,17 +19,17 @@ const Home = () => {
         document.querySelector('.adfit-home').appendChild(ins);
         document.querySelector('.adfit-home').appendChild(scr);
     },[]);
-    
+
     return(
         <div className="background">
             <div className="home">
                 <div className='title'>
-                    말랑술떡이 알려주는<br/>🍻당신의 술🍻
+                    말랑콩떡이 알려주는<br/>🔪당신의 싸이코패스 성향 테스트🔪
                 </div>
                 <div className="group-image"></div>
                 <Link to='/test'>
                     <div className='start-btn'>
-                        ― 입장하기 →
+                        ― 시작하기 →
                     </div>
                 </Link>
                 <div className="adfit-home" style={{width:'100%', marginTop:'100px'}}/>
